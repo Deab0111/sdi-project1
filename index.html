@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OG Poké</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="pokedex">
+    <section class="left-panel">
+      <div class="lights">
+        <div class="big-light"></div>
+        <div class="small red"></div>
+        <div class="small yellow"></div>
+        <div class="small green"></div>
+      </div>
+
+      <div class="screen">
+        <img id="pokemon-img" src="" alt="Pokemon image" />
+      </div>
+
+      <div class="controls">
+        <button id="prev-btn">Prev</button>
+        <button id="next-btn">Next</button>
+      </div>
+    </section>
+
+    <section class="right-panel">
+      <h1>OG 151</h1>
+
+      <form id="search-form">
+        <input id="search-input" type="text" placeholder="Name or #" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="info-screen">
+        <p id="error-message"></p>
+        <h2 id="pokemon-name">Loading...</h2>
+        <p id="pokemon-id"></p>
+        <div id="pokemon-types"></div>
+
+        <p><strong>Height:</strong> <span id="height"></span></p>
+        <p><strong>Weight:</strong> <span id="weight"></span></p>
+
+        <h3>Abilities</h3>
+        <ul id="abilities"></ul>
+
+        <h3>Stats</h3>
+        <div id="stats"></div>
+
+        <p id="error-message"></p>
+
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
